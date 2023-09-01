@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+    New Topic
+{% endblock %}
+
+{% block breadcrumb %}
+    <li class="breadcrumb-item"><a href="{% url 'Home' %}">Boards</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'board_topics' board.pk %}">{{board.name}}</a></li>
+    <li class="breadcrumb-item active">New Topic</li>
+{% endblock %}
+
+{% block content %}
+    <form class="form" method="post">
+        {% csrf_token %}
+        {% include 'includes/forms.html' %}
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+    </form>
+{% endblock %}

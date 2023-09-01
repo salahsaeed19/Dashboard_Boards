@@ -1,0 +1,24 @@
+{% load static %}
+{% load widget_tweaks %}
+<html lang="en">
+    <head>
+
+        <meta charser="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+        {% block file_css_js %}{% endblock file_css_js %}
+
+    </head>
+    <body>
+
+        <div class="container"> 
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb my-4">
+                    {% block breadcrumb %}{% endblock %}
+                </ol>
+            </nav>
+            {% block content %}{% endblock %}
+        </div>
+                
+    </body>
+</html>

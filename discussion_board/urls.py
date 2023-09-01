@@ -20,6 +20,5 @@ from boards import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', views.Show_Text, name="Show_Text"),
     path('', include('boards.urls')),
 ]
