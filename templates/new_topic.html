@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block content %}
-    <form class="form" method="post">
+    <form class="form" method="post" novalidation>
         {% csrf_token %}
         {% include 'includes/forms.html' %}
         <br>
