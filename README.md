@@ -26,7 +26,7 @@ These instructions will help you set up and run TopicTalk on your local machine 
 
    ```sh
    git clone https://github.com/salahsaeed19/Dashboard_Boards.git
-   cd topictalk
+   cd Learn_Django
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -86,4 +86,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Date
 
 8st September 2023
-```
