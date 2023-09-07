@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block breadcrumb %}
-    <li class="breadcrumb-item"><a href="{% url 'Home' %}">Boards</a></li>
+    <li class="breadcrumb-item active">Boards</li>
 {% endblock %}
 
 {% block content %}
@@ -22,7 +22,7 @@
             {% for board in boards %}
                 <tr>
                     <td scope="row">
-                        <a href="{% url 'board_topics' board.pk %}">{{board.name}}</a>
+                        <a href="{% url 'board_topics' board.pk %}" style="text-decoration: none;">{{board.name}}</a>
                         <small class="text-muted d-block">{{board.description}}</small>
                     </td>
                     <td>{{board.id}}</td>

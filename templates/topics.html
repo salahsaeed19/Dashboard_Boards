@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block breadcrumb %}
-    <li class="breadcrumb-item"><a href="{% url 'Home' %}">Boards</a></li>
-    <li class="breadcrumb-item active">{{board.name}}</li>
+    <li class="breadcrumb-item" style="display: inline-block;"><a href="{% url 'Home' %}" style="text-decoration: none;">Boards</a></li>
+    <li class="breadcrumb-item active" style="display: inline-block;">{{board.name}}</li>
 {% endblock %}
 
 {% block content %}
@@ -26,7 +26,7 @@
         <tbody>
             {% for topic in board.topics.all %}
                 <tr>
-                    <td scope="row">{{topic.subject}}</td>
+                    <td scope="row"><a href="{% url 'topic_posts' board.pk topic.pk %}">{{topic.subject}}</a></td>
                     <td>{{topic.created_by.username}}</td>
                     <td>0</td>
                     <td>0</td>

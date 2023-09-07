@@ -9,6 +9,7 @@ TopicTalk is a forum-like Django application that allows users to engage in disc
 - Contribute to discussions with individual posts.
 - Responsive design for easy access on different devices.
 - User authentication and security measures.
+- User registration, login, and password change functionalities.
 
 ## Getting Started
 
@@ -68,6 +69,7 @@ These instructions will help you set up and run TopicTalk on your local machine 
 - Browse existing boards and discussions on the home page.
 - Click on a board to view and participate in its discussions.
 - Create new topics within boards and post messages to engage in discussions.
+- User registration, login, and password change functionalities are available.
 
 ## Contributing
 
@@ -75,7 +77,7 @@ Contributions are welcome! If you encounter any issues or have suggestions for i
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/salahsaeed19/) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/salahsaeed19/Dashboard_Boards) file for details.
 
 ## Created By
 
@@ -83,4 +85,5 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Date
 
-1st September 2023
+8st September 2023
+```

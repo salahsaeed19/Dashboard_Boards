@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    Boards | Sign Up
+    Boards | Log In
 {% endblock %}
 {% block file_css_js %}
     <link rel="stylesheet" href="{% static 'css/account.css' %}">
@@ -16,17 +16,17 @@
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title">Sign up</h3>
+                        <h3 class="card-title">Welcome back!</h3>
                         <form method="post" novalidate>
                             {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ next }}">
                             {% include 'includes/forms.html' %}
                             <br>
-                            <br>
-                            <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Create an account</button>
+                            <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Log In</button>
                         </form>
                     </div>
                     <div class="card-footer text-muted text-center">
-                        Already have an account? <a href="{%url 'Login'%}">Log in</a>
+                        Create new account <a href="{% url 'signup' %}">Sign up </a>
                     </div>
                 </div>
             </div>
